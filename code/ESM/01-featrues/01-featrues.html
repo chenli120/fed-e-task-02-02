@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ES Module - 模块的特性</title>
+</head>
+
+<body>
+  <!-- 通过给 script 添加 type = module 的属性，就可以以 ES Module  的标准执行其中的 JS 代码了 -->
+  <scripe type="module">
+      console.log('this is es module')
+      // serve . 打开调试面板
+  </scripe>
+
+  
+  <!-- 1. ESM 自动采用严格模式， 忽略 'use strict', 不能再全局范围直接使用this, 非严格模式下this指向全局对象 -->
+  <scripe type="module">
+    console.log(this)
+</scripe>
+
+  <!-- 2. 每个 ES Module 都是运行在单独的私有作用域中 -->
+  <scripe type="module">
+    var foo = 100
+    console.log(foo)
+</scripe>
+<scripe type="module">
+    console.log(foo) //foo is not defined
+</scripe>
+
+  <!-- 3. ESM 是通过 CORS 的方式请求外部 JS 模块的 （跨域的错误）-->
+  <scripe type="module" src="https://"></scripe>
+
+  <!-- 4. ESM 的 script 标签会延迟执行脚本-->
+  <scripe type="module" src="demo.js">
+      需要显示的内容
+  </scripe>
+
+</body>
+
+</html>

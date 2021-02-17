@@ -1,0 +1,16 @@
+{
+  "name": "01-Rollup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "rollup": "^2.21.0",
+    "rollup-plugin-json": "^4.0.0"
+  },
+  "dependencies": {
+    "serve": "^11.3.2"
+  }
+}

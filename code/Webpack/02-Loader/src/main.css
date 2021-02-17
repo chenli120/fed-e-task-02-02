@@ -1,0 +1,13 @@
+
+/* //样式代码中的 @import 指令 和 url 函数 */
+@import url(reset.css);
+
+body {
+    /* margin: 0 auto;
+    padding: 0 20px;
+    max-width: 800px; */
+    background: #f4f8fb;
+    min-height: 100vh;
+    background-image: url(aaa.png);
+    background-size: cover;
+}

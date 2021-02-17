@@ -1,0 +1,14 @@
+{
+  "name": "09-babel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4"
+  },
+  "dependencies": {
+    "serve": "^11.3.2"
+  }
+}
